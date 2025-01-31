@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="accuracy-bar">
+        <div class="accuracy-label">Accuracy</div>
+        <div class="accuracy-container">
+            <div id="accuracy-fill"></div>
+        </div>
+        <div id="accuracy-percentage">0%</div>
+    </div>
+    <div class="score-bar">
+        <div class="score-item correct">
+            <span class="score-label">Correct:</span>
+            <span id="correct-count">0</span>
+        </div>
+        <div class="score-item wrong">
+            <span class="score-label">Wrong:</span>
+            <span id="wrong-count">0</span>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Quiz Time</h1>
+        <div id="quiz">
+            <h2 id="question"></h2>
+            <div id="choices" class="btn-grid">
+                <!-- Choices will be inserted here -->
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn btn">Next</button>
+            </div>
+        </div>
+        <div id="score-container" class="hide">
+            <h2>Quiz Complete!</h2>
+            <div id="score">0</div>
+            <div id="summary" class="summary">
+                <!-- Summary will be inserted here -->
+            </div>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
